@@ -1,3 +1,7 @@
+html {
+  box-sizing: border-box;
+}
+
 *,
 *::before,
 *::after {
@@ -7,48 +11,263 @@
 :root {
   --accent-color: #2196f3;
   --secondary-color: #212121;
-  --main-font: "Roboto", sans-serif;
+  --main-font: 'Roboto', sans-serif;
   --second-bg-color: #f5f4fa;
   --gradient-color: rgba(47, 48, 58, 0.4);
   --logo-client: #afb1b8;
   --timing: cubic-bezier(0.4, 0, 0.2, 1);
 }
+body {
+  font-family: var(--main-font);
+}
+
+/* ------------- option for reset---------- */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0;
+}
+
+ul,
+ol {
+  margin: 0;
+  padding: 0;
+}
+
+p {
+  margin: 0;
+}
+
+img {
+  display: block;
+}
 
 /* ----------------------------------------- */
 
+.list {
+  list-style: none;
+}
+
+.header-width {
+  width: 1170px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.button {
+  display: inline-block;
+  color: var(--secondary-color);
+  background-color: #f5f4fa;
+  font-family: inherit;
+  border-radius: 4px;
+  border: none;
+  text-align: center;
+}
+
 /*---------- шапка ------------*/
+
+.header {
+  display: flex;
+  /* border: 1px solid teal; */
+  justify-content: space-between;
+}
 
 /* ----------------контейнер шапки----------------------*/
 
-/* ------------- flex логотип ------------------*/
+.header .container {
+  display: flex;
+}
 
+/* ------------- flex логотип ------------------*/
+.header .container-logo {
+  display: flex;
+  margin-right: 93px;
+}
+
+.container-logo {
+  padding-top: 24px;
+  padding-bottom: 25px;
+}
 /* -------------параметры шрифта логотипа-----------------*/
 
+.logo-text-studio {
+  font-family: 'Raleway', sans-serif;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 26px;
+  line-height: 1.192;
+  letter-spacing: 0.03em;
+  text-decoration: none;
+  color: #000000;
+}
+.word-web {
+  color: var(--accent-color);
+}
+
 /* ----------- flex студия + портфолио + контакты ----------------*/
+.navigation-menu {
+  display: flex;
+}
+
+.navigation-item:not(:last-child) {
+  margin-right: 50px;
+}
+
+.container-item {
+  padding-top: 32px;
+  padding-bottom: 32px;
+}
 
 /* ----------- наведение мышки ----------------*/
+.navigation-list-link:hover,
+.navigation-list-link:focus,
+.header-mail:hover,
+.header-mail:focus,
+.header-tel:hover,
+.header-tel:focus {
+  color: var(--accent-color);
+}
+
+.email-icon,
+.tel-icon {
+  fill: currentColor;
+}
+.navigation-menu .navigation-list-link.current {
+  color: var(--accent-color);
+}
 
 /* ----------параметры шрифта студия + портфолио + контакты ------------------*/
 
+.navigation-list-link {
+  position: relative;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.142;
+  letter-spacing: 0.02em;
+  text-decoration: none;
+  color: var(--secondary-color);
+  padding-top: 32px;
+  padding-bottom: 32px;
+  transition: 300ms;
+}
 /* -------------------нижнее подчеркивание------------------------ */
+
+.navigation-menu .navigation-list-link.current::after {
+  position: absolute;
+  content: '';
+  display: block;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  height: 4px;
+  background-color: var(--accent-color);
+  border-radius: 2px;
+  transition: 300ms;
+}
 
 /* ------------ flex номер + имеил ------------------*/
 
-/* ------------ параметры шрифта номер + имеил ------------------*/
+.container-address {
+  display: flex;
+}
 
+.address-list {
+  display: flex;
+  padding-top: 32px;
+  padding-bottom: 32px;
+}
+
+.address-list .header-mail {
+  margin-right: 30px;
+}
+/* ------------ параметры шрифта номер + имеил ------------------*/
+.header-tel,
+.header-mail {
+  display: flex;
+  align-items: center;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.142;
+  letter-spacing: 0.02em;
+  text-decoration: none;
+  color: #757575;
+  transition: 500ms;
+}
+.tel-icon,
+.email-icon {
+  margin-right: 10px;
+}
 /*---------------BLOCK II------------------*/
 
 /*---------------HERO -----------------------
 
 
 ----------------------фон текста----------------*/
+.hero {
+  background-color: #2f303a;
+  max-width: 1600px;
+  height: 600px;
+
+  margin-left: auto;
+  margin-right: auto;
+  padding-top: 200px;
+  padding-bottom: 200px;
+
+  background-image: linear-gradient(
+      var(--gradient-color),
+      var(--gradient-color)
+    ),
+    url('../images/banner.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
 
 /*---------------параметры шрифта текста-------------------*/
-
+.hero-title {
+  margin-left: auto;
+  margin-right: auto;
+  font-weight: 900;
+  font-size: 44px;
+  line-height: 1.363;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: #ffffff;
+  text-align: center;
+}
 /*---------------ширина эфективные решения-------------------*/
+.hero .hero-title {
+  width: 696px;
+}
 
 /*---------------Кнопка заказать услугу-------------------*/
-
+.container-button {
+  display: block;
+  text-align: center;
+  margin-top: 30px;
+  font-family: var(--accent-color);
+}
+.modal-btn {
+  min-width: 200px;
+  min-height: 50px;
+  font-family: var(--accent-color);
+  font-weight: 700;
+  font-size: 16px;
+  outline: none;
+  line-height: 1.187;
+  color: #ffffff;
+  letter-spacing: 0.06em;
+  padding: 10px 32px;
+  background-color: var(--accent-color);
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  border-radius: 4px;
+  border: none;
+  cursor: pointer;
+}
 /*----------модальное окно---------------*/
 .backdrop {
   position: fixed;
@@ -177,12 +396,12 @@
 /* ----------------сделал чекбокс----------------- */
 .modal-form-policy:checked + .modal-form-policy-text::before {
   background-color: var(--accent-color);
-  background-image: url("../icon/icon_check.svg");
+  background-image: url('../icon/icon_check.svg');
   border: none;
 }
 
 .modal-form-policy-text::before {
-  content: "";
+  content: '';
   display: inline-block;
   width: 16px;
   height: 15px;
@@ -701,15 +920,6 @@
   /* border: 1px solid teal; */
 }
 
-.button {
-  display: inline-block;
-  color: var(--secondary-color);
-  background-color: #f5f4fa;
-  font-family: inherit;
-  border-radius: 4px;
-  border: none;
-  text-align: center;
-}
 .button-list .button {
   margin-right: 8px;
   padding: 6px 22px;
