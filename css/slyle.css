@@ -45,12 +45,10 @@ img {
   display: block;
 }
 
-/* ----------------------------------------- */
-
 .list {
   list-style: none;
 }
-
+/* ----------------------------------------- */
 .header-width {
   width: 1170px;
   margin-left: auto;
@@ -71,7 +69,6 @@ img {
 
 .header {
   display: flex;
-  /* border: 1px solid teal; */
   justify-content: space-between;
 }
 
