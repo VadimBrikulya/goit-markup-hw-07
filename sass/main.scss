@@ -1,2 +1,9 @@
+@import "./utils/visually-hidden.scss";
+
 @import "./base/common";
-@import "./components/header";
+@import "./layout/header";
+@import "./components/logo";
+@import "./components/navigation_list";
+@import "./components/address_list";
+@import "./layout/hero";
+@import "./components/modal-btn";

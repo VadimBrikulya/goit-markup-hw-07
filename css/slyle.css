@@ -16,210 +16,39 @@
 
 /* ----------------------------------------- */
 
-.button {
-  display: inline-block;
-  color: var(--secondary-color);
-  background-color: #f5f4fa;
-  font-family: inherit;
-  border-radius: 4px;
-  border: none;
-  text-align: center;
-}
-
 /*---------- шапка ------------*/
 
 /* ----------------контейнер шапки----------------------*/
 
 /* ------------- flex логотип ------------------*/
-.container-logo {
-  display: flex;
-  margin-right: 93px;
-  padding-top: 24px;
-  padding-bottom: 25px;
-}
 
 /* -------------параметры шрифта логотипа-----------------*/
 
-.logo-text-studio {
-  font-family: "Raleway", sans-serif;
-  font-style: normal;
-  font-weight: bold;
-  font-size: 26px;
-  line-height: 1.192;
-  letter-spacing: 0.03em;
-  text-decoration: none;
-  color: #000000;
-}
-.word-web {
-  color: var(--accent-color);
-}
-
 /* ----------- flex студия + портфолио + контакты ----------------*/
-.navigation-menu {
-  display: flex;
-}
-
-.navigation-item:not(:last-child) {
-  margin-right: 50px;
-}
-
-.container-item {
-  padding-top: 32px;
-  padding-bottom: 32px;
-}
 
 /* ----------- наведение мышки ----------------*/
-.navigation-list-link:hover,
-.navigation-list-link:focus {
-  color: var(--accent-color);
-}
-
-.header-mail:hover,
-.header-mail:focus {
-  color: var(--accent-color);
-}
-.header-tel:hover,
-.header-tel:focus {
-  color: var(--accent-color);
-}
-
-.email-icon,
-.tel-icon {
-  fill: currentColor;
-}
-.navigation-menu .navigation-list-link.current {
-  color: var(--accent-color);
-}
 
 /* ----------параметры шрифта студия + портфолио + контакты ------------------*/
 
-.navigation-list-link {
-  position: relative;
-  font-weight: 500;
-  font-size: 14px;
-  line-height: 1.142;
-  letter-spacing: 0.02em;
-  text-decoration: none;
-  color: var(--secondary-color);
-  padding-top: 32px;
-  padding-bottom: 32px;
-  transition: 300ms;
-}
 /* -------------------нижнее подчеркивание------------------------ */
-
-.navigation-menu .navigation-list-link.current::after {
-  position: absolute;
-  content: "";
-  display: block;
-  left: 0;
-  bottom: 0;
-  width: 100%;
-  height: 4px;
-  background-color: var(--accent-color);
-  border-radius: 2px;
-  transition: 300ms;
-}
 
 /* ------------ flex номер + имеил ------------------*/
 
-.container-address {
-  display: flex;
-}
-
-.address-list {
-  display: flex;
-  padding-top: 32px;
-  padding-bottom: 32px;
-}
-
-.address-list .header-mail {
-  margin-right: 30px;
-}
 /* ------------ параметры шрифта номер + имеил ------------------*/
-.header-tel,
-.header-mail {
-  display: flex;
-  align-items: center;
-  font-style: normal;
-  font-weight: 500;
-  font-size: 14px;
-  line-height: 1.142;
-  letter-spacing: 0.02em;
-  text-decoration: none;
-  color: #757575;
-  transition: 500ms;
-}
-.tel-icon,
-.email-icon {
-  margin-right: 10px;
-}
+
 /*---------------BLOCK II------------------*/
 
 /*---------------HERO -----------------------
 
 
 ----------------------фон текста----------------*/
-.hero {
-  background-color: #2f303a;
-  max-width: 1600px;
-  height: 600px;
-
-  margin-left: auto;
-  margin-right: auto;
-  padding-top: 200px;
-  padding-bottom: 200px;
-
-  background-image: linear-gradient(
-      var(--gradient-color),
-      var(--gradient-color)
-    ),
-    url("../images/banner.jpg");
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center;
-}
 
 /*---------------параметры шрифта текста-------------------*/
-.hero-title {
-  margin-left: auto;
-  margin-right: auto;
-  font-weight: 900;
-  font-size: 44px;
-  line-height: 1.363;
-  letter-spacing: 0.06em;
-  text-transform: uppercase;
-  color: #ffffff;
-  text-align: center;
-}
+
 /*---------------ширина эфективные решения-------------------*/
-.hero .hero-title {
-  width: 696px;
-}
 
 /*---------------Кнопка заказать услугу-------------------*/
-.container-button {
-  display: block;
-  text-align: center;
-  margin-top: 30px;
-  font-family: var(--accent-color);
-}
-.modal-btn {
-  min-width: 200px;
-  min-height: 50px;
-  font-family: var(--accent-color);
-  font-weight: 700;
-  font-size: 16px;
-  outline: none;
-  line-height: 1.187;
-  color: #ffffff;
-  letter-spacing: 0.06em;
-  padding: 10px 32px;
-  background-color: var(--accent-color);
-  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
-  border-radius: 4px;
-  border: none;
-  cursor: pointer;
-}
+
 /*----------модальное окно---------------*/
 .backdrop {
   position: fixed;
@@ -872,6 +701,15 @@
   /* border: 1px solid teal; */
 }
 
+.button {
+  display: inline-block;
+  color: var(--secondary-color);
+  background-color: #f5f4fa;
+  font-family: inherit;
+  border-radius: 4px;
+  border: none;
+  text-align: center;
+}
 .button-list .button {
   margin-right: 8px;
   padding: 6px 22px;
