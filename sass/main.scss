@@ -1,6 +1,30 @@
+// //utils
+// @import "./utils/variables";
+// @import "./utils/_visually_hidden";
+// //base
+// @import "./base/common";
+// //components
+// @import "./components/description";
+// @import "./components/modal-button";
+// @import "./components/modal-backdrop";
+// @import "./components/navigation";
+// @import "./components/logo";
+// @import "./components/address";
+// @import "./components/chart";
+// @import "./components/about_us.scss";
+// @import "./components/our_team";
+// @import "./components/clients";
+// @import "./components/footer-address";
+// @import "./components/icon_footer";
+// @import "./components/footer_email_distribution";
+// //layout
+// @import "./layout/hero";
+// @import "./layout/header";
+// @import "./layout/footer";
+
 //utils
 @import "./utils/variables";
-@import "./utils/_visually_hidden";
+@import "./utils/visually_hidden";
 //base
 @import "./base/common";
 //components
@@ -10,6 +34,16 @@
 @import "./components/navigation";
 @import "./components/logo";
 @import "./components/address";
-//layout
+@import "./components/chart";
+@import "./components/about_us.scss";
+@import "./components/our_team";
+@import "./components/clients";
+
+// @import "./components/footer-address";
+// @import "./components/icon_footer";
+// @import "./components/footer_email_distribution";
+// //layout
 @import "./layout/hero";
 @import "./layout/header";
+
+// @import "./layout/footer";

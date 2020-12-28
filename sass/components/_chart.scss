@@ -1,0 +1,25 @@
+.thumb-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 120px;
+  margin-bottom: 30px;
+  background-color: var(--second-bg-color);
+  border-radius: 4px;
+}
+
+.indent_section {
+  padding-top: 94px;
+}
+
+.title-list {
+  display: flex;
+}
+
+.title-list .item:not(:nth-child(4n)) {
+  margin-right: 30px;
+}
+
+.title-list .item {
+  width: 270px;
+}
