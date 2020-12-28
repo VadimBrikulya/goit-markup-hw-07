@@ -82,6 +82,14 @@ img {
   margin-bottom: 10px;
 }
 
+.description-portfolio {
+  font-family: var(--accent-color);
+  font-size: 16px;
+  line-height: 1.875;
+  letter-spacing: 0.03em;
+  color: #757575;
+}
+
 .modal-btn {
   min-width: 200px;
   min-height: 50px;
