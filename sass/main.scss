@@ -1,3 +1,9 @@
+//utils
+@import "./utils/variables";
+//base
 @import "./base/common";
-
+//components
 @import "./components/description";
+//layout
+@import "./layout/header";
+@import "./layout/navigation";
