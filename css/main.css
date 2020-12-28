@@ -569,7 +569,7 @@ img {
   color: #ffffff;
 }
 
-our-team {
+.our-team {
   padding-top: 94px;
   padding-bottom: 94px;
   background-color: var(--second-bg-color);
@@ -679,6 +679,7 @@ our-team {
 }
 
 .client {
+  margin-top: 94px;
   margin-bottom: 94px;
 }
 
