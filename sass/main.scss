@@ -1,9 +1,15 @@
 //utils
 @import "./utils/variables";
+@import "./utils/_visually_hidden";
 //base
 @import "./base/common";
 //components
 @import "./components/description";
+@import "./components/modal-button";
+@import "./components/modal-backdrop";
+@import "./components/navigation";
+@import "./components/logo";
+@import "./components/address";
 //layout
+@import "./layout/hero";
 @import "./layout/header";
-@import "./layout/navigation";
