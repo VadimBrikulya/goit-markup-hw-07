@@ -6,11 +6,10 @@
 .header {
   display: flex;
   justify-content: space-between;
-}
-
-.header .header__container {
-  display: flex;
-}
-.header__container-address {
-  display: flex;
+  & .header__container {
+    display: flex;
+    &-address {
+      display: flex;
+    }
+  }
 }

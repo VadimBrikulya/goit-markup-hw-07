@@ -2,11 +2,10 @@
   display: flex;
   flex-direction: column;
   margin-top: 20px;
-}
-
-.footer-address .contact-list:not(:last-child) {
-  margin-bottom: 9px;
-  margin-top: 9px;
+  & .contact-list:not(:last-child) {
+    margin-bottom: 9px;
+    margin-top: 9px;
+  }
 }
 
 .footer-logo {
@@ -17,23 +16,6 @@
   font-weight: 700;
   font-size: 26px;
   line-height: 1.2;
-}
-
-.contact-form {
-  background: #2f303a;
-  padding-top: 60px;
-  padding-bottom: 60px;
-}
-
-.footer-address {
-  display: flex;
-  flex-direction: column;
-  margin-top: 20px;
-}
-
-.footer-address .contact-list:not(:last-child) {
-  margin-bottom: 9px;
-  margin-top: 9px;
 }
 
 .contact-form {
