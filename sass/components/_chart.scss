@@ -14,12 +14,10 @@
 
 .title-list {
   display: flex;
-}
-
-.title-list .item:not(:nth-child(4n)) {
-  margin-right: 30px;
-}
-
-.title-list .item {
-  width: 270px;
+  & .item:not(:nth-child(4n)) {
+    margin-right: 30px;
+  }
+  & .item {
+    width: 270px;
+  }
 }

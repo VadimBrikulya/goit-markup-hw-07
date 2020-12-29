@@ -1,6 +1,13 @@
 .client {
   margin-top: 94px;
   margin-bottom: 94px;
+  &-list {
+    display: flex;
+    justify-content: space-between;
+  }
+  &-icon {
+    fill: currentColor;
+  }
 }
 
 .title-box {
@@ -10,10 +17,6 @@
   font-size: 36px;
   line-height: 1.16;
   text-align: center;
-}
-.client-list {
-  display: flex;
-  justify-content: space-between;
 }
 
 .client-link {
@@ -26,14 +29,9 @@
   border: 1px solid var(--logo-client);
   border-radius: 4px;
   transition: 500ms;
-}
-
-.client-link:hover,
-.client-link:focus {
-  color: var(--accent-color);
-  border: 1px solid var(--accent-color);
-}
-
-.client-icon {
-  fill: currentColor;
+  &:hover,
+  &:focus {
+    color: var(--accent-color);
+    border: 1px solid var(--accent-color);
+  }
 }
