@@ -479,7 +479,8 @@ img {
   color: #757575;
   -webkit-transition: 500ms;
   transition: 500ms;
-  margin-right: 50px;
+  margin-left: 50px;
+  margin-right: auto;
 }
 
 .thumb-container {
@@ -978,8 +979,10 @@ img {
   font-family: var(--accent-color);
 }
 
-.header-width {
-  width: 1170px;
+.container {
+  width: 1200px;
+  padding-left: 15px;
+  padding-right: 15px;
   margin-left: auto;
   margin-right: auto;
 }
