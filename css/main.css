@@ -675,8 +675,8 @@ img {
 }
 
 .client {
-  margin-top: 94px;
-  margin-bottom: 94px;
+  padding-top: 94px;
+  padding-bottom: 94px;
 }
 
 .client-list {
@@ -944,6 +944,14 @@ img {
   fill: #fff;
 }
 
+.container {
+  width: 1200px;
+  padding-left: 15px;
+  padding-right: 15px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
 .hero {
   background-color: #2f303a;
   max-width: 1600px;
@@ -977,14 +985,6 @@ img {
   text-align: center;
   margin-top: 30px;
   font-family: var(--accent-color);
-}
-
-.container {
-  width: 1200px;
-  padding-left: 15px;
-  padding-right: 15px;
-  margin-left: auto;
-  margin-right: auto;
 }
 
 .header {
